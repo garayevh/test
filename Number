@@ -1,0 +1,12 @@
+number = int( input( "Enter the number: " )  )
+count = 0
+
+for first_first in range (2, number + 1):
+    count = 0
+    for first in range (2, first_first + 1):
+
+        if first_first % first == 0:
+            count+= first
+
+        if count == number:
+            print (f"HEEEEY {number}")
